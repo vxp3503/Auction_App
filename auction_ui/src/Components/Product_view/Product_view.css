@@ -1,0 +1,73 @@
+.product{
+    padding: 4% 12%;
+    margin-top: 32px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.product_preview{
+    width: 50%;
+}
+.product_preview> img{
+    width: 100%;
+}
+
+.product_data{
+    width: 50%;
+    margin-left: 100px;
+}
+
+.product_title{
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.product_description{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.product_owner{
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(0, 0, 0);
+}
+
+.product_comments{
+    padding: 0% 12% ;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+}
+.Comment_description{
+    font-size: 20px;
+    font-weight: bold;
+    color: #813AFE;
+}
+
+.msg{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+.msg1{
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.product_amount{
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+.product_form{
+    display: flex;
+    justify-content: space-between;
+}
+.close{
+    margin-top: 10px !important;
+}

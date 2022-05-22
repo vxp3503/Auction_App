@@ -1,0 +1,23 @@
+version: "3"
+services:
+  frontend:
+      container_name: auction_ui
+      build:
+         context: ./auction_ui
+         dockerfile: Dockerfile
+      image: vxp3503/auction_ui:0.1
+      ports:
+         - "3000:3000"
+      volumes:
+         - ./auction_ui:/app
+  backend:
+      container_name: auction_server
+      build:
+         context: ./auction_server
+         dockerfile: Dockerfile
+      image: vxp3503/auction_server:0.1
+      ports:
+         - "8000:8000"
+      volumes:
+         - ./auction_server:/app
+

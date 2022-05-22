@@ -1,0 +1,16 @@
+.color-nav{
+    background-color: #813AFE !important;
+    color: white;
+}
+.sticky-nav {
+    position: sticky !important;
+    top: 0;
+    z-index: 1;
+  }
+
+.username{
+    margin-left: 10px;
+    font-weight: bold;
+    opacity: 0.9;
+    color: #fff;
+}
