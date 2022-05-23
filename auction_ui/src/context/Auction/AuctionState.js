@@ -28,7 +28,7 @@ const AuctionState = (props) => {
             const data = await axios({
                 withCredentials: true,
                 method: "get",
-                url: "http://54.91.139.171:8000/current_user",
+                url: "http://localhost:8000/current_user",
             })
             console.log(data)
             if (data.data.Send == 0) {
@@ -57,7 +57,7 @@ const AuctionState = (props) => {
         try {
             const response=await axios({
                 method: "get",
-                url: "http://54.91.139.171:8000/",
+                url: "http://localhost:8000/",
                 withCredentials: true
               })
                 console.log(response.data)
@@ -71,7 +71,7 @@ const AuctionState = (props) => {
         try{
             const response=await axios({
                 method:"get",
-                url: "http://54.91.139.171:8000/inside/"+id,
+                url: "http://localhost:8000/inside/"+id,
                 withCredentials: true
             })
             console.log(response.data)

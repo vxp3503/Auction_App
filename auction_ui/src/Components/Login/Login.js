@@ -42,7 +42,7 @@ const Login = (props) => {
             const result = await axios({
                 withCredentials: true,
                 method: "post",
-                url: `http://54.91.139.171:8000/login`,
+                url: `http://localhost:8000/login`,
                 
                 headers: {
                     'Content-Type': 'multipart/form-data',
@@ -129,7 +129,7 @@ export default Login
 
 // axios({
 //     method: "post",
-//     url: "http://54.91.139.171:8000/login",
+//     url: "http://localhost:8000/login",
 //     data: bodyFormData,
 //     headers: {
 //         'Content-Type': 'multipart/form-data',

@@ -24,7 +24,7 @@ const Index = (props) => {
     const data=await axios({
       withCredentials: true,
       method: "get",
-      url: "http://54.91.139.171:8000/logout",
+      url: "http://localhost:8000/logout",
     })
     user1.current()
   }
