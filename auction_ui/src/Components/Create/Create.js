@@ -63,7 +63,7 @@ const Create = () => {
         bodyFormData.append('category',userInput.category)
         axios({
             method: "post",
-            url: "http://localhost:8000/create",
+            url: "http://54.91.139.171:8000/create",
             data: bodyFormData,
             withCredentials:true,
             headers:{

@@ -43,7 +43,7 @@ const Product_view = (props) => {
     bodyFormData.append('bid_price', bid)
     axios({
       method: "post",
-      url: "http://localhost:8000/add_bid/" + id,
+      url: "http://54.91.139.171:8000/add_bid/" + id,
       withCredentials: "true",
       data: bodyFormData,
       headers: {
@@ -64,7 +64,7 @@ const Product_view = (props) => {
   const AddWatchlistHandler = () => {
     axios({
       method: "get",
-      url: "http://localhost:8000/update_watchlist/" + id,
+      url: "http://54.91.139.171:8000/update_watchlist/" + id,
       withCredentials: "true",
       headers: {
         'Content-Type': 'multipart/form-data'
@@ -87,7 +87,7 @@ const Product_view = (props) => {
   const CloseAuctionHandler = () => {
     axios({
       method: "get",
-      url: "http://localhost:8000/close_auction/" + id,
+      url: "http://54.91.139.171:8000/close_auction/" + id,
       withCredentials: "true",
       headers: {
         'Content-Type': 'multipart/form-data'
@@ -116,7 +116,7 @@ const Product_view = (props) => {
     bodyFormData.append('content', comment)
     axios({
       method: "post",
-      url: "http://localhost:8000/add_comment/" + id,
+      url: "http://54.91.139.171:8000/add_comment/" + id,
       withCredentials: "true",
       data: bodyFormData,
       headers: {

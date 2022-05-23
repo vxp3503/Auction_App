@@ -78,7 +78,7 @@ const Register = () => {
         console.log("Register")
         axios({
             method: "post",
-            url: "http://localhost:8000/register",
+            url: "http://54.91.139.171:8000/register",
             data: bodyFormData,
             headers: {
                 'Content-Type': 'multipart/form-data'
